@@ -1,0 +1,15 @@
+title: Material Docs Jekyll theme
+description: >
+  Jekyll theme built with material web components
+
+
+author:
+  name: Fernando Pasik
+
+exclude:
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - package.json
+  - README.md
+  - yarn.lock

@@ -6,6 +6,9 @@ description: >
 author:
   name: Fernando Pasik
 
+plugins:
+  - jekyll-seo-tag
+
 exclude:
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md

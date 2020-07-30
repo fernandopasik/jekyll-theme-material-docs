@@ -1,0 +1,25 @@
+{
+  "name": "jekyll-material-docs",
+  "description": "Jekyll theme built with material web components",
+  "homepage": "https://github.com/fernandopasik/jekyll-material-docs",
+  "bugs": "https://github.com/fernandopasik/jekyll-material-docs/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fernandopasik/jekyll-material-docs.git"
+  },
+  "license": "MIT",
+  "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
+  "scripts": {
+    "build": "jekyll build",
+    "start": "jekyll serve",
+    "verify": "yarn build"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "prettier-plugin-packagejson": "^2.2.5"
+  }
+}

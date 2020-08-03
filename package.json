@@ -11,7 +11,7 @@
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
   "scripts": {
     "build": "jekyll build",
-    "start": "jekyll serve",
+    "start": "jekyll serve -o",
     "verify": "yarn build"
   },
   "devDependencies": {

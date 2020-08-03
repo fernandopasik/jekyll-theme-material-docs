@@ -8,6 +8,9 @@ author:
 
 google_analytics: UA-5425682-4
 
+sass:
+  style: compressed
+
 plugins:
   - jekyll-seo-tag
 

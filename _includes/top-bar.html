@@ -1,0 +1,21 @@
+<header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+	<nav class="mdc-top-app-bar__row">
+		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+			<a
+				href="{{ site.github.url | escape }}/"
+				class="mdc-top-app-bar__title mdc-theme--on-primary"
+			>
+				{{ site.short_title | escape }}
+			</a>
+		</section>
+		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+			<a
+				href="{{ site.github.repository_url | escape }}"
+				class="mdc-top-app-bar__action-item mdc-icon-button"
+				aria-label="{{ site.title | escape }} Github Repository Link"
+			>
+				{% include github-icon.html %}
+			</a>
+		</section>
+	</nav>
+</header>

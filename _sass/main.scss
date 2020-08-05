@@ -1,15 +1,9 @@
+@import 'hero';
+
 :root {
   --mdc-theme-primary: #2196f3;
 }
 
 .transparent-bg {
   background-color: transparent;
-}
-
-.hero {
-  padding-top: 64px;
-}
-
-.hero .mdc-button--outlined {
-  border-color: currentColor;
 }

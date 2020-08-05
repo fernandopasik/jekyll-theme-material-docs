@@ -12,6 +12,13 @@
 		</section>
 		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
 			<a
+				href="https://twitter.com/{{ site.twitter | escape }}"
+				class="mdc-top-app-bar__action-item mdc-icon-button"
+				aria-label="{{ site.title }} Twitter Link"
+			>
+				{% include twitter-icon.html %}
+			</a>
+			<a
 				href="{{ site.github.repository_url | escape }}"
 				class="mdc-top-app-bar__action-item mdc-icon-button"
 				aria-label="{{ site.title }} Github Repository Link"

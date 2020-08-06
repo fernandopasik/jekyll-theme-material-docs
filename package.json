@@ -11,8 +11,9 @@
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
   "scripts": {
     "build": "jekyll build",
+    "lint": "stylelint '**/*.scss' --syntax scss",
     "start": "jekyll serve -o",
-    "verify": "yarn build"
+    "verify": "yarn lint && yarn build"
   },
   "resolutions": {
     "conventional-changelog-angular": "^5.0.11",
@@ -24,6 +25,11 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "prettier-plugin-packagejson": "^2.2.5"
+    "prettier-plugin-packagejson": "^2.2.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-junit-formatter": "^0.2.2",
+    "stylelint-prettier": "^1.1.2"
   }
 }

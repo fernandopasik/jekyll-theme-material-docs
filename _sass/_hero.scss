@@ -1,7 +1,11 @@
 .hero {
-  padding-top: 64px;
+  padding-top: 128px;
 }
 
 .hero .mdc-button--outlined {
   border-color: currentColor;
+}
+
+.hero-actions {
+  margin: 6em 0 2em;
 }

@@ -24,3 +24,4 @@ coverage
 # build and temp folders
 .jekyll-cache
 _site
+/*.gem

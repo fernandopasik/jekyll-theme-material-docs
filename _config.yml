@@ -16,6 +16,7 @@ sass:
   style: compressed
 
 plugins:
+  - jekyll-github-metadata
   - jekyll-seo-tag
 
 exclude:

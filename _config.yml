@@ -6,9 +6,9 @@ description: >
 twitter: fernandopasik
 url: https://fernandopasik.com/jekyll-theme-material-docs
 
-author:
-  name: Fernando Pasik
-  url: https://fernandopasik.com
+# author:
+#   name: Fernando Pasik
+#   url: https://fernandopasik.com
 
 google_analytics: UA-5425682-4
 

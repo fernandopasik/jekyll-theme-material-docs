@@ -2,12 +2,12 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "material-docs"
+  spec.name          = "jekyll-theme-material-docs"
   spec.version       = "1.0.0"
   spec.authors       = ["Fernando Pasik"]
 
   spec.summary       = "Jekyll theme built with material web components"
-  spec.homepage      = "https://github.com/fernandopasik/jekyll-material-docs"
+  spec.homepage      = "https://github.com/fernandopasik/jekyll-theme-material-docss"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"

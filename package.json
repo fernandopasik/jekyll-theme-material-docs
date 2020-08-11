@@ -1,11 +1,11 @@
 {
-  "name": "jekyll-material-docs",
+  "name": "jekyll-theme-material-docs",
   "description": "Jekyll theme built with material web components",
-  "homepage": "https://github.com/fernandopasik/jekyll-material-docs",
-  "bugs": "https://github.com/fernandopasik/jekyll-material-docs/issues",
+  "homepage": "https://github.com/fernandopasik/jekyll-theme-material-docs",
+  "bugs": "https://github.com/fernandopasik/jekyll-theme-material-docs/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fernandopasik/jekyll-material-docs.git"
+    "url": "https://github.com/fernandopasik/jekyll-theme-material-docs.git"
   },
   "license": "MIT",
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",

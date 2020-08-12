@@ -1,0 +1,6 @@
+<a
+	href="{% if site.url contains 'localhost' %}{{ site.url | escape }}{% else %}{{ site.github.url | escape }}{% endif %}"
+	class="mdc-top-app-bar__title mdc-theme--on-primary"
+>
+	{{ site.title }}
+</a>

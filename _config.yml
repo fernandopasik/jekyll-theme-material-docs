@@ -10,6 +10,12 @@ twitter: fernandopasik
 #   name: Fernando Pasik
 #   url: https://fernandopasik.com
 
+main_nav:
+  - title: Get Started
+    url: /getting-started
+  - title: API
+    url: /api
+
 google_analytics: UA-5425682-4
 
 sass:

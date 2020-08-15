@@ -6,11 +6,14 @@
 			</a>
 		</section>
 		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-			<a href="getting-started" class="mdc-top-app-bar__action-item mdc-button">
-				<div class="mdc-button__ripple"></div>
-				<span class="mdc-button__label">Get Started</span>
+			{% for item in site.main_nav %}
+			<a
+				href="{{ site.github.url }}{{ item.url | escape }}"
+				class="mdc-top-app-bar__action-item mdc-button"
+			>
+				{{ item.title | escape }}
 			</a>
-			{% if site.twitter %}
+			{% endfor %} {% if site.twitter %}
 			<a
 				href="https://twitter.com/{{ site.twitter | escape }}"
 				class="mdc-top-app-bar__action-item mdc-icon-button"

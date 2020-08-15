@@ -1,7 +1,9 @@
 <nav class="mdc-top-app-bar mdc-top-app-bar--fixed">
 	<div class="mdc-top-app-bar__row">
 		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-			{% include current-site-link.html %}
+			<a href="{{ '/' | relative_url }}" class="mdc-top-app-bar__title mdc-theme--on-primary">
+				{{ site.title }}
+			</a>
 		</section>
 		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
 			<a href="getting-started" class="mdc-top-app-bar__action-item mdc-button">

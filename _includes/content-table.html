@@ -1,0 +1,29 @@
+<nav>
+	<ul class="mdc-list mdc-list-group">
+		{% for item in site.content_table %} {% if item.url %}
+		<li>
+			<a class="mdc-list-item" href="{{ item.url | escape }}">
+				<span class="mdc-list-item__ripple"></span>
+				<span class="mdc-list-item__text">{{ item.title }}</span>
+			</a>
+		</li>
+		{% else %}
+		<li class="mdc-list-group__subheader">
+			<p class="mdc-typography--subtitle1">{{ item.title }}</p>
+
+			{% if item.links %}
+			<ul class="mdc-list">
+				{% for subitem in item.links %}
+				<li>
+					<a class="mdc-list-item" href="{{ subitem.url | escape }}">
+						<span class="mdc-list-item__ripple"></span>
+						<span class="mdc-list-item__text">{{ subitem.title }}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		</li>
+		{% endif %} {% endfor %}
+	</ul>
+</nav>

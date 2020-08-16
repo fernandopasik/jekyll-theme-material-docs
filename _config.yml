@@ -16,6 +16,16 @@ main_nav:
   - title: API
     url: /api
 
+content_table:
+  - title: Get Started
+    url: /getting-started
+  - title: API
+    links:
+      - title: home
+        url: /api/home
+      - title: page
+        url: /api/page
+
 google_analytics: UA-5425682-4
 
 sass:

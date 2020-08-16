@@ -6,6 +6,13 @@ layout: default
 	{%- include top-bar.html -%}
 </header>
 
-<main class="mdc-top-app-bar--fixed-adjust mdc-layout-grid grid-container">
-	{%- include content.html -%}
+<main class="main-content mdc-top-app-bar--fixed-adjust mdc-layout-grid grid-container">
+	<div class="mdc-layout-grid__inner">
+		<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+			{%- include content-table.html -%}
+		</div>
+		<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9">
+			{%- include content.html -%}
+		</div>
+	</div>
 </main>

@@ -11,7 +11,9 @@ layout: default
 		<div
 			class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-3-desktop"
 		>
-			{%- include content-table.html -%}
+			<div class="position-sticky mdc-top-app-bar--fixed-adjust-relative">
+				{%- include content-table.html -%}
+			</div>
 		</div>
 		<div
 			class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-9-desktop"

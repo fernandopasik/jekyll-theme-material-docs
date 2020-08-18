@@ -1,5 +1,23 @@
 <div class="mdc-layout-grid text-center grid-container">
 	<p>
+		{% if site.twitter %}
+		<a
+			href="https://twitter.com/{{ site.twitter | escape }}"
+			class="mdc-icon-button"
+			aria-label="{{ site.title }} Twitter Link"
+		>
+			{% include twitter-icon.html %}
+		</a>
+		{% endif %}
+		<a
+			href="{{ site.github.repository_url }}"
+			class="mdc-icon-button"
+			aria-label="{{ site.title }} Github Repository Link"
+		>
+			{% include github-icon.html %}
+		</a>
+	</p>
+	<p>
 		{% include made-with-love.html %}
 	</p>
 	{%- if site.github.license -%}

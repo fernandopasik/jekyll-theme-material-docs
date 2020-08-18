@@ -1,8 +1,4 @@
-@import 'grid', 'hero', 'code';
-
-:root {
-  --mdc-theme-primary: #2196f3;
-}
+@import 'theme', 'grid', 'hero', 'code';
 
 .text-center {
   text-align: center;

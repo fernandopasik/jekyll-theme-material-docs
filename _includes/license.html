@@ -1,5 +1,9 @@
+{% assign repo=site.github.public_repositories | where:"name", site.github.project_title %} {%
+assign start_year=repo[0].created_at | slice: 0, 4 %} {% assign end_year=repo[0].updated_at | slice:
+0, 4 %} {% if end_year == start_year %} {% assign year=start_year %}{% else %} {% assign
+year=start_year | append: ' - ' | append: end_year %}{% endif %}
 <span>
-	© 2020 under the terms of the
+	© {{ year }} under the terms of the
 	<a
 		href="{{ site.github.repository_url }}/blob/master/LICENSE"
 		class="mdc-theme--text-primary-on-background"

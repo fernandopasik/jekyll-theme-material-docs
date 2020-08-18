@@ -2,7 +2,9 @@
 	<p>
 		{% include made-with-love.html %}
 	</p>
+	{%- if site.github.license -%}
 	<p>
 		{% include license.html %}
 	</p>
+	{%- endif -%}
 </div>

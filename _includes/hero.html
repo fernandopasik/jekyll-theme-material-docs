@@ -4,7 +4,10 @@
 		<p class="mdc-typography--headline5">{{ site.description }}</p>
 
 		<p class="hero-actions">
-			<a href="getting-started" class="mdc-button mdc-button--outlined mdc-theme--on-primary">
+			<a
+				href="{{ 'getting-started' | relative_url }}"
+				class="mdc-button mdc-button--outlined mdc-theme--on-primary"
+			>
 				<span class="mdc-button__ripple"></span>
 				<span class="mdc-button__label">Get Started</span>
 			</a>

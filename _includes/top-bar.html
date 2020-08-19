@@ -8,7 +8,7 @@
 		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
 			{% for item in site.main_nav %}
 			<a
-				href="{{ site.github.url }}{{ item.url | escape }}"
+				href="{{ site.github.url }}{{ item.url | escape | relative_url }}"
 				class="mdc-top-app-bar__action-item mdc-button"
 			>
 				{{ item.title | escape }}

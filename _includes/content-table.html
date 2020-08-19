@@ -2,7 +2,7 @@
 	<ul class="mdc-list mdc-list-group">
 		{% for item in site.content_table %} {% if item.url %}
 		<li>
-			<a class="mdc-list-item" href="{{ item.url | escape }}">
+			<a class="mdc-list-item" href="{{ item.url | escape | relative_url }}">
 				<span class="mdc-list-item__ripple"></span>
 				<span class="mdc-list-item__text">{{ item.title }}</span>
 			</a>
@@ -15,7 +15,7 @@
 			<ul class="mdc-list">
 				{% for subitem in item.links %}
 				<li>
-					<a class="mdc-list-item" href="{{ subitem.url | escape }}">
+					<a class="mdc-list-item" href="{{ subitem.url | escape | relative_url }}">
 						<span class="mdc-list-item__ripple"></span>
 						<span class="mdc-list-item__text">{{ subitem.title }}</span>
 					</a>

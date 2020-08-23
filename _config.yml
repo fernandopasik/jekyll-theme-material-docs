@@ -32,6 +32,7 @@ sass:
   style: compressed
 
 plugins:
+  # already included in github, but to enable local dev
   - jekyll-github-metadata
   - jekyll-seo-tag
 

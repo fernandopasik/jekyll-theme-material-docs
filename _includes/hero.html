@@ -1,18 +1,28 @@
 <div class="hero mdc-theme--on-primary mdc-theme--primary-bg">
 	<div class="mdc-layout-grid grid-container">
-		<h1 class="mdc-typography--headline3">{{ site.title }}</h1>
-		<p class="mdc-typography--headline5">{{ site.description }}</p>
-
-		<p class="hero-actions">
-			<a
-				href="{{ 'getting-started' | relative_url }}"
-				class="mdc-button mdc-button--outlined mdc-theme--on-primary"
+		<div class="mdc-layout-grid__inner">
+			<div
+				class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6"
 			>
-				<span class="mdc-button__ripple"></span>
-				<span class="mdc-button__label">Get Started</span>
-			</a>
-		</p>
+				<h1 class="mdc-typography--headline3">{{ site.title }}</h1>
+				<p class="mdc-typography--headline5">{{ site.description }}</p>
 
-		{{ page.hero_example | markdownify }}
+				<p class="hero-actions">
+					<a
+						href="{{ 'getting-started' | relative_url }}"
+						class="mdc-button mdc-button--outlined mdc-theme--on-primary"
+					>
+						<span class="mdc-button__ripple"></span>
+						<span class="mdc-button__label">Get Started</span>
+					</a>
+				</p>
+			</div>
+
+			<div
+				class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--align-middle"
+			>
+				{{ page.hero_example | markdownify }}
+			</div>
+		</div>
 	</div>
 </div>

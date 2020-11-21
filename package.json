@@ -11,6 +11,7 @@
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
   "scripts": {
     "build": "jekyll build",
+    "format": "prettier --write ** ./* ./.??*",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "start": "jekyll serve -o",
     "verify": "yarn lint && yarn build"

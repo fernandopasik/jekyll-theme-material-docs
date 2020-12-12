@@ -15,6 +15,7 @@
     "postinstall": "npm run -s normalize",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/_normalize.scss && prettier _sass/_normalize.scss --write",
+    "publish": "gem push $(gem build | grep File: | cut -c 9-)",
     "start": "jekyll serve -o",
     "verify": "yarn lint && yarn build"
   },

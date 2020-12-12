@@ -15,5 +15,5 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14'
-      - run: yarn install
+      - run: HUSKY_SKIP_INSTALL=1 yarn install
       - run: yarn lint

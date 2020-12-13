@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2-beta
         with:
           node-version: '14'
       - run: HUSKY_SKIP_INSTALL=1 yarn install

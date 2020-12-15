@@ -5,7 +5,7 @@
 [badge-ci]: https://github.com/fernandopasik/jekyll-theme-material-docs/workflows/main/badge.svg
 [url-ci]: https://github.com/fernandopasik/jekyll-theme-material-docs/actions 'Build Status'
 
-Jekyll theme built with material web components
+Jekyll theme for documentation 📝 built with material web components
 
 ## Installation
 

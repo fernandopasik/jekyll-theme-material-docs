@@ -2,7 +2,9 @@
 
 [![Build Status][badge-ci]][url-ci]
 
+[badge-version]: https://img.shields.io/gem/v/jekyll-theme-material-docs?logo=rubygems
 [badge-ci]: https://github.com/fernandopasik/jekyll-theme-material-docs/workflows/main/badge.svg
+[url-version]: https://rubygems.org/gems/jekyll-theme-material-docs 'ruby gem version'
 [url-ci]: https://github.com/fernandopasik/jekyll-theme-material-docs/actions 'Build Status'
 
 Jekyll theme for documentation 📝 built with material web components

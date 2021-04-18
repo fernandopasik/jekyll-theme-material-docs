@@ -1,1 +1,14 @@
+node_modules
+yarn*.*
+.DS_Store
+.editorconfig
+.gitattributes
+.husky
+.*ignore
+LICENSE
+Gemfile
+Gemfile.lock
+/jekyll-theme-material-docs*
 _layouts/compress.html
+_site
+.jekyll-cache

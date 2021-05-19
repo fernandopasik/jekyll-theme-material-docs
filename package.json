@@ -11,7 +11,7 @@
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
   "scripts": {
     "build": "jekyll build",
-    "format": "prettier --write ** ./* ./.??*",
+    "format": "prettier --no-error-on-unmatched-pattern --write ** ./* ./.??*",
     "gem:publish": "gem push $(gem build | grep File: | cut -c 9-)",
     "postinstall": "husky install",
     "lint": "stylelint '**/*.scss' --syntax scss",

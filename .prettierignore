@@ -1,6 +1,6 @@
+.DS_Store
 node_modules
 yarn*.*
-.DS_Store
 .editorconfig
 .gitattributes
 .husky

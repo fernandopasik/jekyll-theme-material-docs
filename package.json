@@ -3,10 +3,7 @@
   "description": "Jekyll theme for documentation 📝 built with material web components",
   "homepage": "https://github.com/fernandopasik/jekyll-theme-material-docs",
   "bugs": "https://github.com/fernandopasik/jekyll-theme-material-docs/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fernandopasik/jekyll-theme-material-docs.git"
-  },
+  "repository": "fernandopasik/jekyll-theme-material-docs",
   "license": "MIT",
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
   "scripts": {

@@ -13,8 +13,8 @@
     "gem:publish": "gem push $(gem build | grep File: | cut -c 9-)",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/_normalize.scss && prettier _sass/_normalize.scss --write",
-    "postinstall": "husky install",
     "postpublish": "pinst --enable",
+    "prepare": "husky install",
     "prepublishOnly": "pinst --disable",
     "start": "jekyll serve -o",
     "verify": "yarn lint && yarn build"

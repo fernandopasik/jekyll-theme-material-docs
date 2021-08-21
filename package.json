@@ -9,7 +9,7 @@
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
   "scripts": {
     "build": "jekyll build",
-    "format": "prettier --no-error-on-unmatched-pattern --write ** ./* ./.??*",
+    "format": "prettier --write .",
     "gem:publish": "gem push $(gem build | grep File: | cut -c 9-)",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/_normalize.scss && prettier _sass/_normalize.scss --write",

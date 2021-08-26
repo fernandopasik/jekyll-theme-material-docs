@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
     f.match(%r!^(assets|_(includes|layouts|sass|api|guide)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
 
-  spec.add_runtime_dependency "jekyll", "~> 4.1"
-  spec.add_runtime_dependency "jekyll-github-metadata", "~> 2.13.0"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
+  spec.add_runtime_dependency "jekyll", "~> 4.0"
+  spec.add_runtime_dependency "jekyll-github-metadata", "~> 2.0"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.0"
 end

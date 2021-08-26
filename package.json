@@ -25,8 +25,8 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "husky": "^7.0.1",
-    "lint-staged": "^11.1.1",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "pinst": "^2.1.6",
     "prettier": "^2.3.2",
     "prettier-plugin-pkg": "^0.10.0",

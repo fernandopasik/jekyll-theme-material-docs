@@ -1,12 +1,12 @@
 {
   "name": "jekyll-theme-material-docs",
-  "private": true,
   "description": "Jekyll theme for documentation 📝 built with material web components",
+  "repository": "fernandopasik/jekyll-theme-material-docs",
   "homepage": "https://github.com/fernandopasik/jekyll-theme-material-docs",
   "bugs": "https://github.com/fernandopasik/jekyll-theme-material-docs/issues",
-  "repository": "fernandopasik/jekyll-theme-material-docs",
-  "license": "MIT",
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "build": "jekyll build",
     "format": "prettier --write .",

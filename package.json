@@ -29,7 +29,7 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "pinst": "^2.1.6",
-    "prettier": "^2.3.2",
+    "prettier": "^2.4.1",
     "prettier-plugin-pkg": "^0.10.0",
     "prettier-plugin-sh": "^0.7.1",
     "stylelint": "^13.13.1",

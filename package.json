@@ -14,9 +14,7 @@
     "gem:publish": "gem push $(gem build | grep File: | cut -c 9-)",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/_normalize.scss && prettier _sass/_normalize.scss --write",
-    "postpublish": "pinst --enable",
     "prepare": "husky install",
-    "prepublishOnly": "pinst --disable",
     "start": "jekyll serve -o",
     "verify": "yarn lint && yarn build"
   },
@@ -28,7 +26,6 @@
     "@commitlint/config-conventional": "^13.1.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
-    "pinst": "^2.1.6",
     "prettier": "^2.4.1",
     "prettier-plugin-pkg": "^0.10.0",
     "prettier-plugin-sh": "^0.7.1",

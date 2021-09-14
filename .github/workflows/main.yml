@@ -1,0 +1,64 @@
+name: main
+on:
+  push:
+    branches:
+      - master
+jobs:
+  install:
+    name: Install Dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          check-latest: true
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+  pre-build:
+    name: ${{ matrix.name }}
+    strategy:
+      matrix:
+        include:
+          - name: Check Format
+            task: yarn format:check
+          - name: Lint
+            task: yarn lint
+    runs-on: ubuntu-latest
+    needs: [install]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          check-latest: true
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      - run: ${{ matrix.task }}
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: [pre-build]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          check-latest: true
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+      - run: bundle exec jekyll build
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: _site

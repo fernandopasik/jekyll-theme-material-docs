@@ -40,13 +40,13 @@ theme: jekyll-theme-material-docs
 And then execute:
 
 ```bash
-$ bundle
+bundle
 ```
 
 Or install it yourself as:
 
 ```bash
-$ gem install jekyll-theme-material-docs
+gem install jekyll-theme-material-docs
 ```
 
 ## License

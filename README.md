@@ -6,7 +6,6 @@ Jekyll theme for documentation 📝 built with material web components
 
 [![Build Status](https://github.com/fernandopasik/jekyll-theme-material-docs/actions/workflows/main.yml/badge.svg)](https://github.com/fernandopasik/jekyll-theme-material-docs/actions/workflows/main.yml 'Build Status')
 [![Known Vulnerabilities](https://snyk.io/test/github/fernandopasik/jekyll-theme-material-docs/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fernandopasik/jekyll-theme-material-docs?targetFile=package.json 'Known Vulnerabilities')
-
 [![ruby gem version](https://img.shields.io/gem/v/jekyll-theme-material-docs?logo=rubygems)](https://rubygems.org/gems/jekyll-theme-material-docs 'ruby gem version')
 
 <!-- BADGES - END -->

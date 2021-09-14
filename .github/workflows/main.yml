@@ -2,7 +2,7 @@ name: main
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   install:
     name: Install Dependencies

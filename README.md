@@ -1,5 +1,7 @@
 # Material Docs
 
+Jekyll theme for documentation 📝 built with material web components
+
 <!-- BADGES - START -->
 
 [![Build Status](https://github.com/fernandopasik/jekyll-theme-material-docs/actions/workflows/main.yml/badge.svg)](https://github.com/fernandopasik/jekyll-theme-material-docs/actions/workflows/main.yml 'Build Status')
@@ -8,8 +10,6 @@
 [![ruby gem version](https://img.shields.io/gem/v/jekyll-theme-material-docs?logo=rubygems)](https://rubygems.org/gems/jekyll-theme-material-docs 'ruby gem version')
 
 <!-- BADGES - END -->
-
-Jekyll theme for documentation 📝 built with material web components
 
 ## Installation
 

@@ -1,9 +1,5 @@
 .husky/_
 /LICENSE
-Gemfile
-Gemfile.lock
-*.gem
-*.gemspec
 _layouts/compress.html
 _site
 .jekyll-cache

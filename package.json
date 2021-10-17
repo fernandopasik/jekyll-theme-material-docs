@@ -16,7 +16,7 @@
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/_normalize.scss && prettier _sass/_normalize.scss --write",
     "prepare": "husky install",
     "start": "jekyll serve -o",
-    "verify": "yarn lint && yarn build"
+    "verify": "yarn format:check && yarn lint && yarn build"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

@@ -12,10 +12,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup
         uses: ./.github/actions/setup
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.0'
-          bundler-cache: true
   pre-build:
     name: ${{ matrix.name }}
     strategy:
@@ -42,10 +38,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup
         uses: ./.github/actions/setup
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.0'
-          bundler-cache: true
       - run: bundle exec jekyll build
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}

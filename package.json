@@ -12,7 +12,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "gem:publish": "gem push $(gem build | grep File: | cut -c 9-)",
-    "lint": "stylelint '**/*.scss' --syntax scss",
+    "lint": "stylelint '**/*.scss'",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/_normalize.scss && prettier _sass/_normalize.scss --write",
     "prepare": "husky install",
     "start": "jekyll serve -o",
@@ -32,6 +32,7 @@
     "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-junit-formatter": "^0.2.2",
     "stylelint-prettier": "^2.0.0"
   }

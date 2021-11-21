@@ -1,0 +1,19 @@
+name: reports
+on:
+  workflow_run:
+    workflows: ['main']
+    types:
+      - completed
+
+jobs:
+  report-lint:
+    name: Lint Report
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish Report
+        uses: dorny/test-reporter@v1
+        with:
+          artifact: lint-results
+          name: Lint Report
+          path: '*.xml'
+          reporter: java-junit

@@ -35,7 +35,13 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Lint
-        run: yarn lint
+        run: yarn lint --custom-formatter 'node_modules/stylelint-junit-formatter' -o reports/lint-results.xml
+      - name: Upload Report
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: lint-results
+          path: reports/lint-results.xml
   build:
     name: Build
     runs-on: ubuntu-latest

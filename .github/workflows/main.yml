@@ -15,6 +15,7 @@ jobs:
   check-format:
     name: Check Format
     runs-on: ubuntu-latest
+    needs: install
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -25,6 +26,7 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
+    needs: install
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -35,7 +37,9 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    needs: [check-format, lint]
+    needs:
+      - check-format
+      - lint
     steps:
       - name: Checkout
         uses: actions/checkout@v2

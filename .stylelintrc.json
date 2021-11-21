@@ -1,6 +1,4 @@
 {
   "extends": ["stylelint-config-standard-scss", "stylelint-prettier/recommended"],
-  "rules": {
-    "at-rule-no-unknown": null
-  }
+  "rules": {}
 }

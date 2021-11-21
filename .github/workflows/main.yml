@@ -8,13 +8,10 @@ jobs:
     name: Install Dependencies
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          check-latest: true
-          cache: 'yarn'
-      - run: yarn install --frozen-lockfile
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: ./.github/actions/setup
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
@@ -31,26 +28,20 @@ jobs:
     runs-on: ubuntu-latest
     needs: [install]
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          check-latest: true
-          cache: 'yarn'
-      - run: yarn install --frozen-lockfile
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: ./.github/actions/setup
       - run: ${{ matrix.task }}
   build:
     name: Build
     runs-on: ubuntu-latest
     needs: [pre-build]
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          check-latest: true
-          cache: 'yarn'
-      - run: yarn install --frozen-lockfile
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: ./.github/actions/setup
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'

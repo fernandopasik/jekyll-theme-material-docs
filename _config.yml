@@ -40,6 +40,6 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - package.json
+  - package-lock.json
   - README.md
-  - yarn.lock
   - '*.gemspec'

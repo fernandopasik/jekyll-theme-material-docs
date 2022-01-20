@@ -24,7 +24,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Check Format
-        run: yarn format:check
+        run: npm run format:check
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Lint
-        run: yarn lint --custom-formatter 'node_modules/stylelint-junit-formatter' -o reports/lint-results.xml
+        run: npm run lint -- --format junit -o reports/lint-results.xml
       - name: Upload Report
         uses: actions/upload-artifact@v2
         if: always()
@@ -54,10 +54,4 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Build
-        run: bundle exec jekyll build
-        env:
-          JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
-      - uses: actions/upload-artifact@v2
-        with:
-          name: site
-          path: _site
+        run: npm run build

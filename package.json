@@ -22,16 +22,16 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.4",
-    "@commitlint/config-conventional": "^16.2.4",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.4.1",
-    "prettier": "^2.6.2",
-    "prettier-plugin-pkg": "^0.13.0",
-    "prettier-plugin-sh": "^0.10.1",
-    "stylelint": "^14.8.1",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard-scss": "^3.0.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
+    "prettier-plugin-pkg": "^0.17.1",
+    "prettier-plugin-sh": "^0.12.8",
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-junit-formatter": "^0.2.2",
     "stylelint-prettier": "^2.0.0"
   }

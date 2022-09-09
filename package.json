@@ -9,6 +9,7 @@
   "private": true,
   "scripts": {
     "build": "jekyll build",
+    "clean": "del _site .jekyll-cache Gemfile.lock ./*.gem",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "gem:publish": "gem push $(gem build | grep File: | cut -c 9-)",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "del-cli": "^5.0.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.4",
     "prettier": "^2.8.0",

@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-material-docs"
-  spec.version       = "1.0.10"
+  spec.version       = "1.0.11"
   spec.authors       = ["Fernando Pasik"]
 
   spec.summary       = "Jekyll theme for documentation 📝 built with material web components"

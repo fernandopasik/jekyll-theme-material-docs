@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup
-        uses: ./.github/actions/setup
+        uses: fernandopasik/actions/setup-node@main
   check-format:
     name: Check Format
     runs-on: ubuntu-latest
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup
-        uses: ./.github/actions/setup
+        uses: fernandopasik/actions/setup-node@main
       - name: Check Format
         run: npm run format:check
   lint:
@@ -33,7 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup
-        uses: ./.github/actions/setup
+        uses: fernandopasik/actions/setup-node@main
       - name: Lint
         run: npm run lint -- --custom-formatter 'node_modules/stylelint-junit-formatter' -o reports/lint-results.xml
       - name: Upload Report
@@ -52,7 +52,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup
-        uses: ./.github/actions/setup
+        uses: fernandopasik/actions/setup-node@main
       - name: Build
         run: bundle exec jekyll build
         env:

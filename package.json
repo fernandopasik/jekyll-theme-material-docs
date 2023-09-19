@@ -23,8 +23,8 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-conventional": "^17.6.1",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "del-cli": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",

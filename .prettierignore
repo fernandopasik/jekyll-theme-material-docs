@@ -1,5 +1,6 @@
 .husky/_
 /LICENSE
+_includes/content.html
 _layouts/compress.html
 _site
 .jekyll-cache

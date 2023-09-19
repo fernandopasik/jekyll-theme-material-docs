@@ -28,12 +28,12 @@
     "del-cli": "^5.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "prettier": "^2.8.8",
-    "prettier-plugin-pkg": "^0.17.1",
-    "prettier-plugin-sh": "^0.12.8",
+    "prettier": "^3.0.3",
+    "prettier-plugin-pkg": "^0.18.0",
+    "prettier-plugin-sh": "^0.13.1",
     "stylelint": "^15.10.3",
-    "stylelint-config-standard-scss": "^8.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
     "stylelint-junit-formatter": "^0.2.2",
-    "stylelint-prettier": "^3.0.0"
+    "stylelint-prettier": "^4.0.2"
   }
 }

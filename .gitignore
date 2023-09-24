@@ -23,9 +23,6 @@ lerna-debug.log*
 pnpm-lock.yaml
 yarn.lock
 
-# test files
-/coverage
-
 # build and temp folders
 *.gem
 .bundle

@@ -15,7 +15,7 @@
     "gem:publish": "gem push $(gem build | grep File: | cut -c 9-)",
     "lint": "stylelint '**/*.scss'",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/_normalize.scss && prettier _sass/_normalize.scss --write",
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "jekyll serve -o",
     "verify": "npm run format:check && npm run lint && npm run build"
   },

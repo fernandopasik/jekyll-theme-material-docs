@@ -1,4 +1,4 @@
 {
-  "*": ["prettier --check"],
+  "*": ["prettier --check", "eslint"],
   "*.scss": ["stylelint"]
 }

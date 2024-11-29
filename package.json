@@ -36,7 +36,7 @@
     "prettier": "^3.4.1",
     "prettier-plugin-pkg": "^0.18.1",
     "prettier-plugin-sh": "^0.14.0",
-    "stylelint": "^16.10.0",
+    "stylelint": "^16.11.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-junit-formatter": "^0.2.2",
     "stylelint-prettier": "^5.0.2"

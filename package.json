@@ -35,7 +35,7 @@
     "lint-staged": "^15.4.3",
     "prettier": "^3.5.1",
     "prettier-plugin-pkg": "^0.18.1",
-    "prettier-plugin-sh": "^0.14.0",
+    "prettier-plugin-sh": "^0.15.0",
     "stylelint": "^16.14.1",
     "stylelint-config-standard-scss": "^14.0.0",
     "stylelint-junit-formatter": "^0.2.2",

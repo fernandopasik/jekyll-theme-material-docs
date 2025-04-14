@@ -23,10 +23,12 @@ lerna-debug.log*
 pnpm-lock.yaml
 yarn.lock
 
+# jekyll
+_site
+.jekyll-cache
+
 # build and temp folders
 *.gem
 .bundle
-.jekyll-cache
 .sass-cache
-_site
 Gemfile.lock

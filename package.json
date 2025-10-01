@@ -24,7 +24,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.0.0",
+    "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "del-cli": "^7.0.0",
     "eslint": "^9.36.0",

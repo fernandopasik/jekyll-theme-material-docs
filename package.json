@@ -33,7 +33,7 @@
     "eslint-plugin-yml": "^1.19.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.0",
     "prettier-plugin-pkg": "^0.21.2",
     "prettier-plugin-sh": "^0.18.0",
     "stylelint": "^16.26.1",

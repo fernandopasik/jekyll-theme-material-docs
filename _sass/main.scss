@@ -1,7 +1,1 @@
-@use 'normalize';
-@use 'fonts';
-@use 'theme';
-@use 'text';
-@use 'layout';
-@use 'hero';
-@use 'code';
+@import 'fonts', 'normalize', 'theme', 'text', 'layout', 'hero', 'code';

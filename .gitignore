@@ -27,8 +27,10 @@ yarn.lock
 _site
 .jekyll-cache
 
-# build and temp folders
-*.gem
+# Ruby
 .bundle
+*.gem
+
+# Sass
 .sass-cache
 Gemfile.lock

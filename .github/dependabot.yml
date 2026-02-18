@@ -13,3 +13,7 @@ updates:
       commitlint:
         patterns:
           - '@commitlint*'
+      stylelint:
+        patterns:
+          - stylelint
+          - stylelint-config-*

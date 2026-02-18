@@ -16,7 +16,6 @@ Gem::Specification.new do |spec|
     f.match(%r!^(assets|_(includes|layouts|sass|api|guide)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
 
-  spec.add_runtime_dependency "faraday-retry", "~> 2"
   spec.add_runtime_dependency "jekyll", "~> 4"
   spec.add_runtime_dependency "jekyll-github-metadata", "~> 2"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2"

@@ -30,6 +30,7 @@ _site
 # Ruby
 .bundle
 *.gem
+vendor
 
 # Sass
 .sass-cache

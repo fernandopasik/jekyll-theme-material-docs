@@ -39,6 +39,7 @@ exclude:
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - LICENSE
+  - eslint.config.js
   - package.json
   - package-lock.json
   - README.md

@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "jekyll build",
+    "build": "bundle exec jekyll build",
     "clean": "del _site .jekyll-cache Gemfile.lock ./*.gem",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -17,7 +17,7 @@
     "lint": "eslint && stylelint '**/*.scss'",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/_normalize.scss && prettier _sass/_normalize.scss --write",
     "prepare": "husky",
-    "start": "jekyll serve -o",
+    "start": "bundle exec jekyll serve -o",
     "verify": "npm run format:check && npm run lint && npm run build"
   },
   "dependencies": {
